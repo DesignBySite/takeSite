@@ -1,0 +1,42 @@
+.info {
+  height: auto;
+  font-size: 1.3rem;
+  padding: 4rem;
+
+  &__img {
+    width: 10px;
+    height: auto;
+  }
+
+  &__heading {
+
+  }
+
+  &__para {
+    padding: 1rem 0;
+    margin-left: 10rem;
+
+    @include md {
+      margin-right: 8rem;
+      width: 30rem;
+      height: auto;
+      display: block;
+      float: left;
+    }
+
+    @include lg {
+      margin-right: 4rem;
+      width: 40rem;
+      height: auto;
+      display: block;
+      float: left;
+    }
+  }
+
+
+  &__para2 {
+    padding: 1rem 0;
+
+
+  }
+}

@@ -14,5 +14,13 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+ font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  
+  @include lg {
+    margin: 0 20rem;
+  }
 }

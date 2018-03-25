@@ -10,7 +10,13 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: sans-serif; }
+  font-family: 'Ubuntu', sans-serif; }
+
+.container {
+  margin: 0 auto; }
+  @media (min-width: 992px) {
+    .container {
+      margin: 0 20rem; } }
 
 .header {
   height: 80vh;
@@ -25,65 +31,53 @@ body {
       height: 105vh; } }
 
 .headerContent {
-  display: block;
+  margin: 0 auto 2rem auto;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1.4rem;
-  margin: 1rem;
-  width: 33rem;
-  margin: 10% auto;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-content: center; }
+  width: 33rem; }
   @media (min-width: 576px) {
     .headerContent {
-      font-size: 1.5rem;
       width: 45rem; } }
   @media (min-width: 768px) {
     .headerContent {
-      font-size: 1.5rem;
       width: 55rem; } }
-  @media (min-width: 992px) {
-    .headerContent {
-      text-align: left;
-      float: left;
-      font-size: 1.5rem;
-      width: 43rem;
-      margin: 20% 0 0 10rem; } }
-  .headerContent--head {
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0 auto; }
-  .headerContent--paragraph {
-    color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
-  .headerContent--paragraph:last-child {
-    padding-bottom: 0; }
+  .headerContent__head {
+    padding-bottom: 2rem; }
+  .headerContent__p {
+    padding-bottom: 1.5rem; }
 
 .info {
-  height: auto;
-  font-size: 1.3rem;
-  padding: 4rem; }
-  .info__img {
-    width: 10px;
-    height: auto; }
-  .info__para {
-    padding: 1rem 0;
-    margin-left: 10rem; }
-    @media (min-width: 768px) {
-      .info__para {
-        margin-right: 8rem;
-        width: 30rem;
-        height: auto;
-        display: block;
-        float: left; } }
+  font-size: 1.4rem;
+  text-align: center; }
+  .info__header {
+    padding: 5rem 0 3rem 0;
+    text-align: center; }
     @media (min-width: 992px) {
-      .info__para {
-        margin-right: 4rem;
+      .info__header {
+        margin-left: 1rem;
+        text-align: left; } }
+  .info__text-section {
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: .5px;
+    display: inline-flex;
+    flex-flow: wrap;
+    align-content: flex-start; }
+  .info__p {
+    margin: 0 auto 2rem auto;
+    width: 33rem; }
+    @media (min-width: 576px) {
+      .info__p {
+        width: 45rem; } }
+    @media (min-width: 768px) {
+      .info__p {
+        width: 55rem; } }
+    @media (min-width: 992px) {
+      .info__p {
+        margin: 0;
+        padding: 1rem;
         width: 40rem;
-        height: auto;
-        display: block;
-        float: left; } }
-  .info__para2 {
-    padding: 1rem 0; }
+        text-align: left; } }
 
 /*# sourceMappingURL=main.css.map */

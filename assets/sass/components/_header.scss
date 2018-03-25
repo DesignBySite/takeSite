@@ -17,43 +17,24 @@
 
 }
 
-.headerContent{
-    display: block;
-    font-size: 1.4rem;
-    margin: 1rem;
-    width: 33rem;
-    margin: 10% auto;
-    text-align: center;
-    @include center-text-flex;
+.headerContent {
+  margin: 0 auto 2rem auto;
+  color: $color-white-light;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 33rem;
 
-  @include sm {
-    font-size: 1.5rem;
-    width: 45rem;
-  }
-
-  @include md {
-    font-size: 1.5rem;
-    width: 55rem;
-  }
+  @include textbox-adjust;
 
   @include lg {
-    text-align: left;
-    float: left;
-    font-size: 1.5rem;
-    width: 43rem;
-    margin: 20% 0 0 10rem;
-  }
-
-  &--head {
-    color: $color-white-light;
-    margin: 0 auto;
 
   }
-    &--paragraph {
-      color: white;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-  } &--paragraph:last-child {
-    padding-bottom: 0;
+
+  &__head {
+    padding-bottom: 2rem;
+  }
+
+  &__p {
+    padding-bottom: 1.5rem;
   }
 }

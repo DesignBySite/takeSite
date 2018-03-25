@@ -40,6 +40,12 @@ $screen-xl-min: 1200px;
   align-content: center;
   
 }
-@mixin sm-screen-textbox {}
-@mixin md-screen-textbox {}
-@mixin lg-screen-textbox {}
+@mixin textbox-adjust {
+   @include sm {
+      width: 45rem;
+    }
+
+    @include md {
+      width: 55rem;
+    }
+}
